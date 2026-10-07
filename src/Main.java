@@ -23,5 +23,12 @@ public class Main {
 
         Nomina nominaEmpleado = new Nomina(clave, nombre, horasTrabajadas, pagoPorHora);
 
+        System.out.println();
+        System.out.println("Horas calculadas: " + nominaEmpleado.getHorasCalculadas());
+        System.out.println("Horas normales: " + nominaEmpleado.calcularHorasNormales());
+        System.out.println("Horas extra: " + nominaEmpleado.calcularHorasExtra());
+        System.out.println("Pago normal: $" + nominaEmpleado.calcularPagoNormal());
+        System.out.println("Pago extra: $" + nominaEmpleado.calcularPagoExtra());
+        System.out.println("Pago total: $" + nominaEmpleado.calcularPagoTotal());
     }
 }
