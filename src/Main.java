@@ -8,7 +8,7 @@ public class Main {
         System.out.println("Sistema de Nomina de Empleados");
 
         System.out.print("Ingrese la clave: ");
-        int clave = entrada.nextInt();
+        String clave = entrada.next();
 
         entrada.nextLine(); // Limpia el salto de linea pendiente
 

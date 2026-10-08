@@ -1,12 +1,12 @@
 public class Nomina {
     // Campos
-    private int clave;
+    private String clave;
     private String nombre;
     private int horasTrabajadas;
     private double pagoPorHora;
 
     // Constructor
-    public Nomina(int clave, String nombre, int horasTrabajadas, double pagoPorHora) {
+    public Nomina(String clave, String nombre, int horasTrabajadas, double pagoPorHora) {
         this.clave = clave;
         this.nombre = nombre;
         this.horasTrabajadas = horasTrabajadas;
@@ -80,7 +80,7 @@ public class Nomina {
     }
 
     // Métodos adicionales para la impresion del ticket
-    public int getClave()
+    public String getClave()
     {
         return clave;
     }
