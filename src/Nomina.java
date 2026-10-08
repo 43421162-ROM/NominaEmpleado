@@ -16,7 +16,7 @@ public class Nomina {
     // MÉTODOS
 
     // Devuelve las horas que se van a considerar para el calculo
-    // Se tarabajo mas de 50, solo se toman 50
+    // Si tarabajo mas de 50, solo se toman 50
     public int getHorasCalculadas()
     {
         if (horasTrabajadas > 50)
@@ -30,7 +30,7 @@ public class Nomina {
     }
 
     // Calcula las horas normales
-    // Maximo pueden ser de 40
+    // Maximo pueden ser 40
     public int calcularHorasNormales()
     {
         int horas = getHorasCalculadas();
@@ -77,5 +77,26 @@ public class Nomina {
     public double calcularPagoTotal()
     {
         return calcularPagoNormal() + calcularPagoExtra();
+    }
+
+    // Métodos adicionales para la impresion del ticket
+    public int getClave()
+    {
+        return clave;
+    }
+
+    public String getNombre()
+    {
+        return nombre;
+    }
+
+    public int getHorasTrabajadas()
+    {
+        return horasTrabajadas;
+    }
+
+    public double getPagoPorHora()
+    {
+        return pagoPorHora;
     }
 }
